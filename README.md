@@ -1,15 +1,6 @@
 # Docker NTP Server
 
-An NTP server running on Alping Linux, NTP servers set in the ntpd.conf as follows:
-
-#Stratum 1
-server ntp0.uos.ac.uk
-server ntp5.leontp.com
-#Stratum 2
-server ntp0.catn.com
-server time.netweaver.uk
-#Localhost as fallback
-server localhost
+An NTP server running on Alping Linux, check for configured Stratum 1 and 2 NTP servers in ntpd.conf.
 
 Run as follows, allow 5mins before querying the server as it will need time to sync itself and become a valid server
 
